@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>CalculatorOIBSIP</title>
+      </head>
+
+      <body>
+            <div class="bodyMain">
+                  <div class="navbar">
+                        <div class="heading">
+                            <h1 id="headd">&nbsp;&nbsp;Calculator By Rajdeep Chowdhury&nbsp;&nbsp;</h1>
+                        </div>
+                        <div class="links">
+                            &nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=100064266127151"><img class="icons" src="images/facebook-circular-logo.png" alt="#"></a>&nbsp;&nbsp;
+                            &nbsp;&nbsp;<a href="https://www.instagram.com/rajdeep_editz_original/"><img class="icons" src="images/instagram (2).png" alt="#"></a>&nbsp;&nbsp;
+                            &nbsp;&nbsp;<a href="https://www.linkedin.com/in/rajdeep-chowdhury-3230461b3/"><img class="icons" src="images/linkedin (2).png" alt="#"></a>&nbsp;&nbsp;
+                            &nbsp;&nbsp;<a href="https://twitter.com/rajdeep27232"><img class="icons" src="images/twitter (1).png" alt="#"></a>&nbsp;&nbsp;
+                            &nbsp;&nbsp;<a href="https://github.com/deepbeatz"><img class="icons" src="images/github.png" alt="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                  </div>
+                  <div class="container">
+                        <h1 class="text-center">Calculator</h1>
+                        <div class="box flex flex-col items-center mx-auto m-w-20">
+                              <div class="row">
+                                    <input type="text" id="result" readonly>
+                              </div>
+                              <div class="row right">
+                                    <button class="button" onclick="clearResult()">C</button>
+                                    <button class="button">%</button>
+                              </div>
+                              <div class="row right">
+                                    <button class="button" onclick="memoryPlus()">M+</button>
+                                    <button class="button" onclick="memoryMinus()">M-</button>
+                                    <button class="button" onclick="recallMemory()">MR</button>
+                                    <button class="button" onclick="clearMemory()">MC</button>
+                              </div>
+                              <div class="row">
+                                    <button class="button" onclick="appendToResult('7')">7</button>
+                                    <button class="button" onclick="appendToResult('8')">8</button>
+                                    <button class="button" onclick="appendToResult('9')">9</button>
+                                    <button class="button" onclick="appendToResult('*')">*</button>
+                              </div>
+                              <div class="row">
+                                    <button class="button" onclick="appendToResult('4')">4</button>
+                                    <button class="button" onclick="appendToResult('5')">5</button>
+                                    <button class="button" onclick="appendToResult('6')">6</button>
+                                    <button class="button" onclick="appendToResult('/')">/</button>
+                              </div>
+                              <div class="row">
+                                    <button class="button" onclick="appendToResult('1')">1</button>
+                                    <button class="button" onclick="appendToResult('2')">2</button>
+                                    <button class="button" onclick="appendToResult('3')">3</button>
+                                    <button class="button" onclick="appendToResult('+')">+</button>
+                              </div>
+                              <div class="row">
+                                    <button class="button" onclick="appendToResult('0')">0</button>
+                                    <button class="button" onclick="appendToResult('.')">.</button>
+                                    <button class="button" onclick="calculate()">=</button>
+                                    <button class="button" onclick="appendToResult('-')">-</button>
+                              </div>
+                        </div>
+                        <script src="script.js"></script>
+                  </div>
+            </div>
+      </body>
+
+</html>
